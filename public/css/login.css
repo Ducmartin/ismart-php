@@ -1,0 +1,39 @@
+ body{
+ font-size: 14px;
+ font-family: Arial, Helvetica, sans-serif;
+ line-height: 23px; 
+background: #0056b3;
+}
+ #form-login{
+width: 300px;
+margin: 150px auto;
+background: #f1f1f1;
+padding: 30px 20px;
+text-align: center;
+}
+input{
+    padding: 5px 0px;
+    border: 1px solid #f1f1f1;
+    background: #e1e1e1;
+}
+input[type='text'],input[type='password']{
+    text-align: center;
+    width: 100%;
+}
+input[type='submit']{
+    width: 100%;
+    background: #847d7d;
+    text-align: center;
+    border: 1px solid rgb(117, 102, 102);
+}
+p.error{ 
+    padding: 10px 0px;
+    color: red;
+    margin-bottom: 0px;
+}
+h1{
+    margin-bottom: 30px;
+}
+.checkbox{
+    float: left;
+}

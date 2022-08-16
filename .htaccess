@@ -1,0 +1,23 @@
+RewriteEngine On
+RewriteBase /
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^dang-nhap.html http://localhost/backend-PHP/project/ismart.com/?mod=login&action=login
+RewriteRule ^dang-xuat.html http://localhost/backend-PHP/project/ismart.com/?mod=login&action=logout
+RewriteRule ^dang-ky.html http://localhost/backend-PHP/project/ismart.com/?mod=login&action=reg
+RewriteRule ^quen-mat-khau.html http://localhost/backend-PHP/project/ismart.com/?mod=login&controller=index&action=reset_pass
+RewriteRule ^hinh-thuc-thanh-toan.html http://localhost/backend-PHP/project/ismart.com/?mod=checkout&action=index
+RewriteRule ^[0-9]+/+hinh-thuc-thanh-toan.html http://localhost/backend-PHP/project/ismart.com/?mod=checkout&action=process
+RewriteRule ^[0-9]+/+thanh-toan.html http://localhost/backend-PHP/project/ismart.com/?mod=checkout&action=process
+RewriteRule ^gio-hang.html http://localhost/backend-PHP/project/ismart.com/?mod=cart&action=show
+RewriteRule ^xu-ly-gio-hang.html http://localhost/backend-PHP/project/ismart.com/?mod=cart&action=process
+RewriteRule ^[0-9-]+/+them-gio-hang.html http://localhost/backend-PHP/project/ismart.com/?mod=cart&action=add
+RewriteRule ^[0-9-]+/+xoa-gio-hang.html http://localhost/backend-PHP/project/ismart.com/?mod=cart&action=delete
+RewriteRule ^([a-zA-Z0-9-]+)$ http://localhost/backend-PHP/project/ismart.com/?mod=products&action=detail&url=$
+RewriteRule ^([a-z-/]+/)$ http://localhost/backend-PHP/project/ismart.com/?mod=products&action=show&url=$
+RewriteRule ^([a-z-/]+.html)$ http://localhost/backend-PHP/project/ismart.com/?mod=pages&action=show&url=$
+RewriteRule ^([a-z0-9A-Z-/]+)+.html$ http://localhost/backend-PHP/project/ismart.com/?mod=pages&action=detail&url=$
+RewriteRule ^kich-hoat-tai-khoan/+[a-z0-9A-Z-] http://localhost/backend-PHP/project/ismart.com/?mod=login&action=active
+RewriteRule ^reset-mat-khau/+[a-z0-9A-Z-] http://localhost/backend-PHP/project/ismart.com/?mod=login&action=reset_pass
+RewriteRule ^doi-mat-khau-thanh-cong.html http://localhost/backend-PHP/project/ismart.com/?mod=login&controller=index&action=success
+RewriteRule ^([a-z-/]+/+trang=+[0-9-])$ http://localhost/backend-PHP/project/ismart.com/?mod=products&action=show&page=$
